@@ -1,0 +1,117 @@
+.container {
+    display: grid;
+    grid-template-columns: 8% repeat(3, 1fr) 8%;
+    grid-template-rows: repeat(6, 550px);
+    grid-gap: 5px;
+    align-items: start;
+    grid-template-areas:
+      "header header header header header"
+      ". Lilly Leo Jasmine ."
+      ". Zeus Sampson Louie ."
+      ". Zoe blank Kona ."
+      ". Wyatt blank Jaxson ."
+      "Footer Footer Footer Footer Footer"
+   }
+  
+  h1  {
+    text-align: center;
+    font-size: 100px;
+  }
+  
+  .item {
+    height: 550px;
+    font-size: 50px;
+    display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  .item > div {
+      justify-content: center;
+  }
+  
+  #header {
+    grid-area: header;
+    background-color: skyblue;
+  }
+  
+  img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      border: 5px solid brown;
+  }
+  
+  .rotate-90 {
+      -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  #Lilly {
+    grid-area: Lilly;
+    background: linear-gradient(180deg, rgba(22,196,54,1) 0%, rgba(44,193,18,0.75) 50%, rgba(209,242,214,0.82) 100%);
+  }
+  
+  #Leo {
+    grid-area: Leo;
+    background: linear-gradient(180deg, rgba(224,8,8,1) 0%, rgba(231,40,40,0.75) 50%, rgba(233,80,80,0.3) 100%);
+  }
+  
+  #Jasmine {
+    grid-area: Jasmine;
+    background: linear-gradient(180deg, rgba(228,116,226,1) 0%, rgba(228,160,227,0.75) 50%, rgba(241,208,240,0.95) 100%);
+  }
+  
+  #Zeus {
+    color:white;
+    grid-area: Zeus;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(5,2,2,0.75) 50%, rgba(11,8,8,0.5) 100%);
+  }
+  
+  #Sampson {
+    grid-area: Sampson;
+    background: linear-gradient(180deg, rgba(51,90,241,1) 0%, rgba(70,98,221,0.75) 50%, rgba(128,167,245,0.5) 100%);
+  }
+  
+  #Louie {
+    grid-area: Louie;
+    background: linear-gradient(180deg, rgba(251,175,7,1) 0%, rgba(238,186,51,0.75) 50%, rgba(245,212,133,0.5) 100%);
+  }
+  
+  #Zoe {
+    grid-area: Zoe;
+    background: linear-gradient(180deg, rgba(112,19,233,1) 0%, rgba(169,71,230,0.75) 50%, rgba(207,170,238,0.5) 100%);
+  }
+  
+  #blank {
+    grid-area: blank; 
+    background: linear-gradient(180deg, rgba(4,244,245,1) 0%, 			 rgba(229,230,71,0.75) 50%, rgba(238,170,220,0.5) 100%);
+      }
+  
+  #Kona {
+    grid-area: Kona;
+    background: linear-gradient(180deg, rgba(245,234,4,1) 0%, rgba(229,230,71,0.75) 50%, rgba(230,238,170,0.5) 100%);
+  }
+
+  #Wyatt {
+    grid-area: Wyatt;
+    background-color: aquamarine;
+  }
+
+  #blank {
+    grid-area: blank; 
+    background: linear-gradient(180deg, rgba(4,244,245,1) 0%, 			 rgba(229,230,71,0.75) 50%, rgba(238,170,220,0.5) 100%);
+      }
+
+  #Jaxson {
+    grid-area: Jaxson;
+    background-color: darkcyan;
+  }
+  
+  #Footer {
+    grid-area: Footer;
+    background-color: goldenrod;
+  }
